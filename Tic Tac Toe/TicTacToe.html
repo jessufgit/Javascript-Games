@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script type="text/javascript" src="TicTacToe.js"></script>
+	<link rel="stylesheet" type="text/css" href="TicTacToe.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Roboto:900|Josefin+Sans:600|Open+Sans+Condensed:300|Coda|Pompiere" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body id="bodyPage" onload="setTimeout(welcome, 1500)">
+		
+	<div class="container">
+		<div class="row headerRow">
+			<div class="col-sm-12">
+				<header>Tic Tac Toe</header>
+			</div>
+		</div>
+		<hr>
+		<div class="row" id="selection">
+			<div class="col-sm-6" id="changingTheGameDiv">
+				<button id="HeadToHead" onclick="selectGame(this.id)">Head To Head</button>
+				<button id="Computer" onclick="selectGame(this.id)">Computer</button>
+			</div>
+			<div class="col-sm-6" id="playDiv">			
+				<span id="start" onclick="playTheGame()">Let's Play!</span>
+			</div>
+			<div class="col-sm-12">	
+				<element id="playerOne" class="pulse" onclick="playerOneTurn()" style="visibility: hidden;">Player One</element>
+				<element id="playerTwo" class="pulse" onclick="playerTwoTurn()" style="visibility: hidden;">Player Two</element>
+			</div>
+			<div class="col-sm-12" id="gameBoard">
+				<div class="row gameBoardRow">
+					<div class="box">
+						<button id="boxa" value="?" onclick="activePlay(this.id)">?</button>
+					</div>
+					<div class="box">
+						<button id="boxb" value="?" onclick="activePlay(this.id)">?</button>
+					</div>
+					<div class="box">
+						<button id="boxc" value="?" onclick="activePlay(this.id)">?</button>
+					</div>
+				</div>
+				<div class="row gameBoardRow">
+					<div class="box">
+						<button id="boxd" value="?" onclick="activePlay(this.id)">?</button>
+					</div>
+					<div class="box">
+						<button id="boxe" value="?" onclick="activePlay(this.id)">?</button>
+					</div>
+					<div class="box">
+						<button id="boxf" value="?" onclick="activePlay(this.id)">?</button>
+					</div>
+				</div>
+				<div class="row gameBoardRow">
+					<div class="box">
+						<button id="boxg" value="?" onclick="activePlay(this.id)">?</button>
+					</div>
+					<div class="box">
+						<button id="boxh" value="?" onclick="activePlay(this.id)">?</button>
+					</div>
+					<div class="box">
+						<button id="boxi" value="?" onclick="activePlay(this.id)">?</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="winnersTable">
+			<div class="row">
+				<div class="col-sm-6">Player One Wins</div>
+				<div class="col-sm-6">Player Two Wins</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div id="playerOneWins">0</div>
+				</div>
+				<div class="col-sm-6">
+					<div id="playerTwoWins">0</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

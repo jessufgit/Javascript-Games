@@ -1,0 +1,31 @@
+{
+	"famousquotes": [
+		{"ID": 1,
+		"quote": "'It took me quite a long time to develop a voice, and now that I have it, I am not going to be silent.'",
+		"author": "Madeleine Albright"},
+
+		{"ID": 2,
+		"quote": "'Of course I am not worried about intimidating men. The type of man who will be intimidated by me is exactly the type of man I have no interest in.'",
+		"author": "Chimamanda Ngozi Adichie"},
+	
+		{"ID": 3,
+	 	"quote": "'Feminism isn't about making women strong. Women are already strong. It's about changing the way the world perceives that strength.'",
+		"author": "G.D. Anderson"},
+	
+		{"ID": 4,
+		"quote": "'No country can ever truly flourish if it stifles the potential of its women and deprives itself of the contributions of half its citizens.'",
+		"author": "Michelle Obama"},
+	
+		{"ID": 5,
+		"quote": "'The best protection any woman can have… is courage.'",
+		"author": "Elizabeth Cady Stanton"},
+	
+		{"ID": 6,
+		"quote": "'If you want something said, ask a man; if you want something done, ask a woman.'",
+		"author": "Margaret Thatcher"},
+	
+		{"ID": 7,
+		"quote": "'The emerging woman ... will be strong-minded, strong-hearted, strong-souled, and strong-bodied...strength and beauty must go together.'",
+		"author": "Louisa May Alcott"}
+	]
+}
